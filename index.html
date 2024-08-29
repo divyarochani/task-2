@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar Section  -->
+    <nav class="navbar container" id="navbar">
+      <div class="navbar-items" id="#">
+        <div class="Brand">
+          <img src="./Assets/logo.png"/>
+        </div>
+        <div class="navlinks">
+          <a class="link" href="#hero">Home</a>
+          <a class="link" href="#about">About Us</a>
+          <a class="link" href="#services">Services</a>
+          <a class="link" href="#team">Team</a>
+          <a class="link" href="#clients">Clients</a>
+          <a class="link" href="#contact">Contact Us</a>
+        </div>
+        <div class="menu-bars" id="menu-btn" onclick=toggleSidebar()>
+          <img src="./Assets/Menu.svg" alt="">
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidemenu hide_sidebar" id="sidebar">
+      <div class="sidebar-head">Bruton technologies</div>
+      <div class="sidebarLinks">
+        <a class="link" href="#hero" onclick=toggleSidebar()>Home</a>
+          <a class="link" href="#about" onclick=toggleSidebar()>About Us</a>
+          <a class="link" href="#services" onclick=toggleSidebar()>Services</a>
+          <a class="link" href="#team" onclick=toggleSidebar()>Team</a>
+          <a class="link" href="#clients" onclick=toggleSidebar()>Clients</a>
+          <a class="link" href="#contact" onclick=toggleSidebar()>Contact Us</a>
+      </div>
+    </div>
+    <!-- Navbar Section  -->
+
+    <!-- Hero Section  -->
+    <div class="container" id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero_heading">Bruton Technologies</div>
+          <div class="Hero_Subheading">
+            Empowering Your Business with Advanced Software Development and Comprehensive Cybersecurity Measures , Our Expertise Drives Your Growth and Shields Your Digital Assets.
+          </div>
+          <div class="ctn-buttons">
+            <a class="link ctn_btn_1" href="#">Read More</a>
+            <a class="link ctn_btn_2" href="#">Request Service</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Section  -->
+
+    <!-- About Us Section  -->
+    <div class="about-container" id="about">
+      <div class="about-items">
+        <div class="About-item about-item-1">
+          <img
+            class="about-image"
+            src="./Assets/about_us.jpg"
+            alt="AboutUs Image"
+          />
+        </div>
+        <div class="About-item">
+          <div class="about-content">
+            <div class="section-heading">About us</div>
+            <div class="about-content-Heading">
+              We Are About Our Company Engineering IT Services
+            </div>
+            <div class="about-content-details">
+              At BRUTON Technologies, we pride ourselves on being a trailblazer in the world of software development and digital transformation. Founded with the vision to empower businesses and individuals alike, our mission is to deliver intelligent, scalable, and user-centric technology solutions that help clients thrive in the fast-paced digital age.
+            </div>
+            <!-- <div class="about-content-details">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              eum, velit, recusandae repellendus ad minima consequatur dolor
+              quos soluta quaerat nihil nemo itaque impedit in molestiae
+              praesentium facere. Culpa, quas?
+            </div> -->
+            <div class="mission-vision-container">
+              <div class="mission-vision-item">
+                <div class="misson-icon">
+                  <img src="./Assets/Mission-icon.svg" alt="" />
+                </div>
+                <div class="mission-content">
+                  <div class="mission-content-heading">Our Mission</div>
+                  <div class="about_sub_details">
+                    At BRUTON Technologies, our approach is client-centric and results-driven. We believe in building long-term relationships with our clients through continuous collaboration, transparency, and excellence in service delivery
+                  </div>
+                </div>
+              </div>
+              <div class="mission-vision-item">
+                <div class="Vision-icon">
+                  <img src="./Assets/Vision.svg" alt="" />
+                </div>
+                <div class="Vision-content">
+                  <div class="mission-content-heading">Our Vision</div>
+                  <div class="about_sub_details">
+                    At BRUTON Technologies, our approach is client-centric and results-driven. We believe in building long-term relationships with our clients through continuous collaboration, transparency, and excellence in service delivery
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="" class="about-btn">Discover More +</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Us Section  -->
+
+    <!-- Our Services Section  -->
+
+    <div class="service-container" id="services">
+      <div class="service-header">
+        <div class="service-heading">Our Services</div>
+        <div class="service-Subheading">
+          Comprehensive Services to Power and Protect Your Business
+        </div>
+      </div>
+      <div class="service-items">
+        <!-- service 1 -->
+        <div class="service-item service-1">
+          <div class="service-img-container">
+            <img class="service-img" src="./Assets//service-1.jpg" alt="" />
+          </div>
+          <div class="service-name">Web Development</div>
+          <div class="service-detail">
+            From responsive websites to feature-rich mobile apps, we develop digital experiences that engage users and drive results.
+            From responsive websites to feature-rich mobile apps, we develop digital experiences that engage users and drive results.
+          </div>
+        </div>
+        <!-- service-2  -->
+        <div class="service-item service-1">
+          <div class="service-img-container">
+            <img class="service-img" src="./Assets//service-2.jpg" alt="" />
+          </div>
+          <div class="service-name">Software Solutions</div>
+          <div class="service-detail">
+            We craft bespoke software tailored to meet the
+unique challenges and needs of your business, ensuring high performance, scalability, and security,
+We craft bespoke software tailored to meet the
+unique challenges and needs of your business, ensuring high performance, scalability, and security
+          </div>
+        </div>
+        <!-- service-3 -->
+        <div class="service-item service-1">
+          <div class="service-img-container">
+            <img class="service-img" src="./Assets//service-3.jpg" alt="" />
+          </div>
+          <div class="service-name">Cyber Security</div>
+          <div class="service-detail">
+            Protecting your digital assets is our priority. We provide end-to-end cybersecurity solutions to safeguard data and ensure compliance.
+            Protecting your digital assets is our priority. We provide end-to-end cybersecurity solutions to safeguard data and ensure compliance.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Services Section  -->
+    <!-- Our Team Section  -->
+    <div class="Team-container" id="team">
+      <div class="Team-section-header">
+        <div class="Team-heading">Our Team Members</div>
+        <div class="Team-Subheading">
+          Introducing Our Team of Visionaries and Specialists
+        </div>
+      </div>
+      <div class="Team-members">
+        <div class="team-member">
+          <div class="member-image-container">
+            <img
+              class="member-image"
+              src="./Assets/member-1.jpg"
+              alt="team-member-image"
+            />
+          </div>
+          <div class="member-role">IT Project Manager</div>
+          <div class="member-name">Malik Torres</div>
+        </div>
+        <div class="team-member">
+          <div class="member-image-container">
+            <img
+              class="member-image"
+              src="./Assets/member-2.jpg"
+              alt="team-member-image"
+            />
+          </div>
+          <div class="member-role">Cybersecurity Analyst</div>
+          <div class="member-name">Aiden Cruz</div>
+        </div>
+        <div class="team-member">
+          <div class="member-image-container">
+            <img
+              class="member-image"
+              src="./Assets/member-3.jpg"
+              alt="team-member-image"
+            />
+          </div>
+          <div class="member-role">Senior Software Engineer</div>
+          <div class="member-name">Lydia Bennett</div>
+        </div>
+        <div class="team-member">
+          <div class="member-image-container">
+            <img
+              class="member-image"
+              src="./Assets/member-4.jpg"
+              alt="team-member-image"
+            />
+          </div>
+          <div class="member-role">Data Scientist</div>
+          <div class="member-name">Sophie Zhang</div>
+        </div>
+      </div>
+    </div>
+    <!-- Our Team Section  -->
+
+    <!-- testimonials section  -->
+    <div class="testimonial-container" id="clients">
+      <div class="testimonial-header">
+        <div class="testimonial-heading">What Client Says ?</div>
+        <div class="testimonial-Subheading">
+          Experience the Difference Our Solutions Make Through Our Clients’ Success Stories 
+        </div>
+      </div>
+      <div class="clients-container">
+        <div class="client">
+          <div class="client-header">
+            <div class="client-profile-container">
+              <img
+                class="client-profile"
+                src="./Assets/member-1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="client-details">
+              <div class="client-name">Malik Torres</div>
+              <div class="client-designation"> IT Supervisor</div>
+            </div>
+          </div>
+          <div class="client-feedback">
+            The level of expertise and dedication from this company is unmatched. Their tailored approach to software development and proactive cybersecurity strategies have significantly improved our operations.
+          </div>
+        </div>
+        <div class="client">
+          <div class="client-header">
+            <div class="client-profile-container">
+              <img
+                class="client-profile"
+                src="./Assets/member-2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="client-details">
+              <div class="client-name">Sophie Zhang</div>
+              <div class="client-designation">Data Scientist</div>
+            </div>
+          </div>
+          <div class="client-feedback">
+            The level of expertise and dedication from this company is unmatched. Their tailored approach to software development and proactive cybersecurity strategies have significantly improved our operations.
+          </div>
+        </div>
+        <div class="client">
+          <div class="client-header">
+            <div class="client-profile-container">
+              <img
+                class="client-profile"
+                src="./Assets/member-3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="client-details">
+              <div class="client-name">Sophiee Zhang</div>
+              <div class="client-designation">Cybersecurity</div>
+            </div>
+          </div>
+          <div class="client-feedback">
+            The level of expertise and dedication from this company is unmatched. Their tailored approach to software development and proactive cybersecurity strategies have significantly improved our operations.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- testimonials section  -->
+
+    <!-- contact us section  -->
+    <div class="location-map" id="contact">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5646.960148478166!2d75.82380013424968!3d26.92373359878693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db14b1bd30ba5%3A0x860e5d531eccb20c!2sHawa%20Mahal!5e0!3m2!1sen!2sin!4v1724854945596!5m2!1sen!2sin"
+        width="100%"
+        height="300"
+        style="border: 0"
+        allowfullscreen="true"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <div class="contact-container">
+      <div class="contact-details">
+        <div class="contact-details-heading">Contact us</div>
+        <div class="contact-details-Subheading">
+          Have Questions? Get in Touch!
+        </div>
+        <div class="contact-details-content">
+          Get in Touch with Our Team of Experts to Start Your Journey Towards Advanced Software Solutions and Robust Cybersecurity. Whether You Have Questions, Need a Consultation, or Are Ready to Begin a Project, We’re Here to Provide Personalized Support and Tailored Solutions.
+        </div>
+        <div class="contact-multiple-options">
+          <div class="contact-option">
+            <img src="./Assets/contact-call.svg" alt="" />
+            <div class="contact-option-detail">
+              <div class="contact-option-name">Phone Number</div>
+              <div class="contact">9898969612</div>
+            </div>
+          </div>
+          <div class="contact-option">
+            <img src="./Assets/Mail.svg" alt="" />
+            <div class="contact-option-detail">
+              <div class="contact-option-name">Email Address</div>
+              <div class="contact">info@brutontech.com</div>
+            </div>
+          </div>
+          <div class="contact-option">
+            <img src="./Assets/Location.svg" alt="" />
+            <div class="contact-option-detail">
+              <div class="contact-option-name">Location</div>
+              <div class="contact">Rajasthan , India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-container">
+        <div class="contact-form-heading">Contact Us</div>
+        <form action="#" class="contact-form">
+          <div class="contact-name-email">
+            <input type="text" placeholder="Your Name*" />
+            <input type="text" placeholder="Your Email*" />
+          </div>
+          <div class="contact-message">
+            <textarea
+              name="Message"
+              id="message"
+              placeholder="Your Message*"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+    <!-- contact us section  -->
+
+    <!-- Footer section  -->
+    <div class="footer">
+    <div class="footer-items">
+      <div class="footer-item-1 footer-item">
+        <div class="footer-item-heading">
+          <div class="Brand">
+            <a class="Logo_big_text link" href="">Bruton</a>
+            <a class="link" href="">Technologies</a>
+          </div>
+        </div>
+        <div class="footer-item-links">
+          Empowering Your Business with Advanced Software Development and Comprehensive Cybersecurity Measures , Our Expertise Drives Your Growth and Shields Your Digital Assets.
+        </div>
+      </div>
+      <div class="footer-item-1 footer-item">
+        <div class="footer-item-heading">
+          <div class="footer-head">Quick Links</div>
+        </div>
+        <div class="footer-item-links">
+          <a class="link" href="#hero" >Home</a>
+          <a class="link" href="#about" >About Us</a>
+          <a class="link" href="#services" >Services</a>
+          <a class="link" href="#team" >Team</a>
+          <a class="link" href="#clients" >Clients</a>
+          <a class="link" href="#contact" >Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-item-1 footer-item">
+        <div class="footer-item-heading">
+          <div class="footer-item-heading">
+            <div class="footer-head">Useful Links</div>
+          </div>
+        </div>
+        <div class="footer-item-links">
+          <a class="link" href="#hero" >Home</a>
+          <a class="link" href="#about" >About Us</a>
+          <a class="link" href="#services" >Services</a>
+          <a class="link" href="#team" >Team</a>
+          <a class="link" href="#clients" >Clients</a>
+          <a class="link" href="#contact" >Contact Us</a>
+        </div>
+      </div>
+      <div class="footer-item-1 footer-item">
+        <div class="footer-item-heading">
+          <div class="footer-item-heading">
+            <div class="footer-head">Head Office Address</div>
+          </div>
+        </div>
+        <div class="footer-item-links">
+          <div class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. In expedita eligendi ab ut inventore minima, consectetur illo velit sapiente iste.</div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Footer section  -->
+    <script src="./script.js"></script>
+  </body>
+</html>
